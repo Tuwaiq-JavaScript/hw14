@@ -1,0 +1,56 @@
+:root {
+	--bg-1: #fafafa;
+  --bg-2: #ffffff;
+  --border: #dbdbdb;
+}
+
+  html{
+      display: flex;
+      min-height: 100%;
+  }
+  
+  body {
+    background-color: var(--bg-1);
+    color:var(--our-white);
+    font-size: 18px;
+    flex: 1;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  #root{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding-top: 54px;
+  }
+  .post {
+background-color: var(--bg-2);
+display: flex;
+flex-direction: column;
+border: 1px solid var(--border);
+width: 100%;
+max-width: 486px;
+border-radius: 8px;
+
+  }
+  .post.header{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+  }
+  .post.header h2{
+      font-size: 14px;
+  }
+  .post.footer.icons {
+      display: flex;
+      flex-direction: row;
+      padding: 4px 4px;
+  }
+  .post .footer .icons .icon{
+      padding: 8px;
+  }
