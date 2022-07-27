@@ -1,0 +1,200 @@
+:root {
+	--bg-1: #fafafa;
+  --bg-2: #ffffff;
+  --border: #dbdbdb;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+	display: flex;
+	min-height: 100%;
+}
+/* ------navbar---- */
+@import url('//fonts.cdnfonts.com/css/billabong');
+/* body {
+  background: #fafafa;
+} */
+
+/* start header */
+
+.navigation {
+  background-color: #ffffff;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 50px;
+  box-sizing: border-box;
+  z-index: 2;
+  /* animation magic */
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+}
+
+.shrink {
+  height: 50px;
+}
+
+.navigation .logo a {
+  position: relative;
+  color: #000000;
+  font-size: 30px;
+  font-family: "billabong", sans-serif;
+  text-decoration: none;
+}
+
+.navigation-search-container {
+  position: relative;
+}
+
+.navigation-search-container input {
+  background-color: #fafafa;
+  padding: 3px 20px;
+  padding-left: 25px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.0975);
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.navigation-search-container .fa-search {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 650px) {
+  /* Navigation */
+  .navigation {
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+  .navigation-search-container {
+    display: none;
+  }
+  .navigation-icons {
+    display: flex;
+  }
+}
+
+.navigation-icons {
+  display: flex;
+}
+
+.navigation-search-container input:focus {
+  outline: none;
+}
+
+.navigation-search-container input::placeholder {
+  text-align: center;
+}
+
+
+
+
+.notification-bubble-wrapper {
+  position: relative;
+  top: -30px;
+  left: 17px;
+}
+
+.notification-bubble {
+  position: absolute;
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 50%;
+  background: #ff2c74;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  padding: 5px 5px 3px;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  font-weight: 500;
+  display: none;
+}
+/* ---------navbar------------- */
+body {
+	background-color: var(--bg-1);
+	color: var(--our-white);
+	font-size: 18px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 54px;
+}
+
+/*--- */
+.navbar{
+  background-color: #ffffff;
+  height: 50px;
+  display: flex;
+  padding: 8px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 50px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.navbar .logo{
+  position: relative;
+  color: #000000;
+  font-size: 30px;
+  font-family: "billabong", sans-serif;
+  text-decoration: none;
+}
+
+
+.navigation-search-container {
+  position: relative;
+
+}
+.login-form {
+  display: flex;
+  background-color: #fff;
+  width: 20%;
+  margin: 30px auto;
+  text-align: center;
+  padding: 25px 0 0 0;
+  flex-direction: column;
+  gap: 20px;
+
+  /* border-radius: 4px; */
+  /* box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2); */
+  
+}
+span{
+  text-align: left;
+  font-size: 12px;
+color: red;
+}
