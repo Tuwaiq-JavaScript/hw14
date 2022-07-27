@@ -1,0 +1,95 @@
+:root{
+    --white-shade: #f0f8ff;
+    --secondary-color:#1e293b;
+    --primary-padding: 8px;
+    --pilled-shape-radius: 40px;
+    --color1: #6d93f3;
+    --color2: #5e90ec;
+    --primary-gradient: linear-gradient(to right,var(--color2), var(--color1))
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background: linear-gradient(to left, #6787ba, #9dc3e3);
+}
+
+.container{
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #353636;
+    background: #fff;
+}
+.item-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.log-in{
+    font-size: 35px;
+    color: var(--secondary-color);
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+input[type="text"], input[type="password"],input[type="email"]{
+    padding: var(--primary-padding);
+    width: 300px;
+    border-radius: var(--pilled-shape-radius);
+    border: none;
+    background: #cee3fc;
+    color: var(--secondary-color);
+    outline: none;
+    border: 1px solid transparent;
+}
+select{
+    padding: var(--primary-padding);
+    width: 320x;
+    border-radius: var(--pilled-shape-radius);
+    border: none;
+    background: #cee3fc;
+    color: var(--secondary-color);
+    border: 1px solid transparent;
+}
+@media only screen and (max-width: 300px) {
+    input[type="text"], input[type="password"],input[type="email"] {
+        width: 200px;
+    }
+  }
+input[type="text"]:focus-visible, input[type="password"]:focus-visible,input[type="email"]:focus-visible{
+    border: 1px solid var(--color1);
+    background: transparent;
+}
+.label{
+    color: var(--secondary-color);
+    margin-bottom: 3px;
+}
+
+.item-container button{
+    border-radius: 50%;
+    border: none;
+    padding: 5px;
+    background: transparent;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px #353636;
+}
+
+button[type="submit"]{
+    width: 100%;
+    padding: var(--primary-padding);
+    border-radius: var(--pilled-shape-radius);
+    border: none;
+    background: var(--primary-gradient);
+    color: var(--white-shade);
+    margin: 10px 0 10px 0;
+}
