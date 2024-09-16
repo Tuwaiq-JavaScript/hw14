@@ -1,0 +1,13 @@
+.button{
+    background-color: blue;
+    padding: 8px 12px;
+    text-align: center;  
+    margin-top: 40px;
+    cursor: pointer;
+  }
+  .hid-btn{
+    display: none;
+  }
+.show-btn{
+  display: block;
+}
